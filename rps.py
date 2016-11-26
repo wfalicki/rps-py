@@ -1,7 +1,7 @@
 from random import randint
 rps = list("rps")
 def rpscomp(x, y):
-    if 1 in [x, y] and len(rps) in [x, y]:
+    if 1 in [x, y] and len(rps) - 1 in [x, y]:
         return min(x, y)
     else:
         return max(x, y)
@@ -9,7 +9,7 @@ while True:
     play = input("What's your move? ")
     if play in rps:
         play = rps.index(play)
-        cpuplay = randint(0, len(rps))
+        cpuplay = randint(0, len(rps) - 1)
         win = rpscomp(play, cpuplay)
         if win == play:
             print("The player wins!")
