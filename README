@@ -1,0 +1,3 @@
+This is a simple & scalable Rock, Paper, Scissors game written as a means of testing GitLab.
+
+By "scalable", I mean that you can even add onto the "rps" string in rps.py to create your own wacky variants. You could also write out a list of words instead of a string of letters.
